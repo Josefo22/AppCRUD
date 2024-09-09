@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SysPatri</string>
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_telefono">Teléfono:</string>
+    <string name="hint_correo_electronico">Correo electrónico:</string>
+    <string name="hint_direccion">Dirección:</string>
+    <string name="hint_deuda">Deuda:</string>
+    <string name="btn_guarda">Guardar registro</string>
+    <string name="menu_nuevo">Nuevo registro</string>
+</resources>
