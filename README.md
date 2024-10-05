@@ -1,58 +1,27 @@
-# Agenda en Android Studio y SQLite
-Se desarrolla una aplicación móvil para agenda en Android Studio y SQLite.
+# AppCRUD
+<div style="text-align: center;">
+    <img src="no-te-rindas.png" alt="Logo" width="200"/> 
+</div>
+Este es un proyecto de **CRUD** (Crear, Leer, Actualizar y Eliminar) desarrollado para gestionar clientes, utilizando **Java** en Android Studio como plataforma de desarrollo móvil y **SQLite** como base de datos local.
 
-## Vídeo 1 📱
-- Creación de aplicación
-- Creación de base de datos
+## Características
 
-**Link del vídeo:** [https://youtu.be/iWQIXjQ8ucA](https://youtu.be/iWQIXjQ8ucA) 
+- **Crear clientes**: Agrega nuevos clientes con información como nombre, dirección, etc.
+- **Listar clientes**: Muestra un listado de todos los clientes registrados.
+- **Editar clientes**: Permite modificar la información de un cliente.
+- **Eliminar clientes**: Borra el registro de un cliente del sistema.
 
-## Vídeo 2 ✅
-- Formulario de registro
-- Menú de navegación
-- Insertar registros en tabla contactos
-- Actualizar estructura de base de datos
+## Tecnologías utilizadas
 
-**Link del vídeo:** [https://youtu.be/k6XVblpUAZs](https://youtu.be/k6XVblpUAZs)
+- **Lenguaje**: Java
+- **Plataforma**: Android Studio
+- **Base de datos**: SQLite
 
-## Vídeo 3 📋
-- Lista dinámica con RecyclerView
-- Consultar registros de tabla contactos
-- Adaptador para crear vista individual para elementos de lista
+## Instalación
 
-**Link del vídeo:** [https://youtu.be/UfZJWqm2A5w](https://youtu.be/UfZJWqm2A5w)
+Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
 
-## Vídeo 4 📝
-- Vista para ver detalles de registro
-- Formulario para editar registro
-- Consultar registros individuales de tabla contactos
-- Actualizar registros de tabla contactos
+1. Clona el repositorio:
 
-**Link del vídeo:** [https://youtu.be/JLvRRJkEmE8](https://youtu.be/JLvRRJkEmE8) 
-
-## Vídeo 5 ⛔
-- Eliminar registros de tabla contactos
-- Cuadro de dialogo de confirmación
-
-**Link del vídeo:** [https://youtu.be/p1-V3bfSqx4](https://youtu.be/p1-V3bfSqx4) 
-
-## Vídeo 6 🔎
-- Implementar SearchView
-- Buscar en listas de RecyclerView
-- Limpiar resultados de búsqueda
-
-**Link del vídeo:** [https://youtu.be/2I1NkJNBz9M](https://youtu.be/2I1NkJNBz9M) 
-
-
-## Autores ✒️
-- **Marko Robles** - *Desarrollo* - [markorobles](https://github.com/markorobles)
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ [Da clic aquí](https://www.paypal.com/paypalme/markorobles?locale.x=es_XC.) 
-* Da las gracias públicamente 🤓.
+   ```bash
+   git clone https://github.com/Pastu17/AppCRUD.git
