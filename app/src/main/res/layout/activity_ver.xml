@@ -1,128 +1,172 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".VerActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".9"
+        android:layout_weight="1"
         android:orientation="vertical">
 
+        <!-- Nombre -->
         <TextView
             android:id="@+id/viewNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre" />
+            android:text="Nombre"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/txtNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="textPersonName"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Teléfono -->
         <TextView
             android:id="@+id/viewTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Teléfono" />
+            android:text="Teléfono"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/txtTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="phone"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Dirección -->
         <TextView
             android:id="@+id/viewDireccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dirección" />
+            android:text="Dirección"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/txtDireccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="textPostalAddress"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Deuda -->
         <TextView
             android:id="@+id/viewDeuda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Deuda" />
+            android:text="Deuda"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/txtDeuda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="numberDecimal"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
 
-        <!-- Campo para la cantidad a sumar/restar -->
+        <!-- Cantidad a cambiar -->
         <TextView
             android:id="@+id/viewCantidadCambio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cantidad a cambiar" />
+            android:text="Cantidad a cambiar"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/txtCantidadCambio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="numberDecimal"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Botones -->
         <Button
             android:id="@+id/btnSumarDeuda"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Sumar Deuda"
-            android:textSize="18sp" />
+            android:text="AÑADIR DEUDA"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="8dp" />
 
         <Button
             android:id="@+id/btnRestarDeuda"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Restar Deuda"
-            android:textSize="18sp" />
+            android:text="ABONAR"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="8dp" />
 
         <Button
             android:id="@+id/btnGuarda"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Guardar"
-            android:textSize="18sp" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
+            android:text="Guardar"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <!-- FloatingActionButtons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <!-- Lápiz en la esquina izquierda -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:clickable="true"
             android:src="@drawable/ic_edit" />
 
+        <!-- Bote de basura en la esquina derecha -->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabEliminar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
+            android:layout_alignParentEnd="true"
             android:clickable="true"
             android:src="@drawable/ic_delete" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

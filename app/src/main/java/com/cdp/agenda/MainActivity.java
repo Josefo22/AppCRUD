@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         // Verificar si hay contactos en la base de datos
         if (listaArrayContactos.size() > 0) {
             // Si hay contactos, inicializamos el adaptador
-            adapter = new ListaContactosAdapter(listaArrayContactos);
+            adapter = new ListaContactosAdapter(MainActivity.this, listaArrayContactos);
             listaContactos.setAdapter(adapter); // Conectamos el adaptador al RecyclerView
         } else {
             // Si no hay contactos, mostramos un mensaje con el contexto correcto

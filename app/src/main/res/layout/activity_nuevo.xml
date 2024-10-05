@@ -4,19 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NuevoActivity">
+    tools:context=".NuevoActivity"
+    android:padding="16dp"
+    android:background="#F5F5F5"> <!-- Fondo general de la actividad -->
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:elevation="4dp">
 
         <TextView
             android:id="@+id/viewNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre" />
+            android:text="@string/hint_nombre"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/txtNombre"
@@ -24,13 +33,19 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:textSize="18sp" />
+            android:textSize="16sp"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp" />
 
         <TextView
             android:id="@+id/viewTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Teléfono" />
+            android:text="@string/hint_telefono"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/txtTelefono"
@@ -38,13 +53,19 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="phone"
-            android:textSize="18sp" />
+            android:textSize="16sp"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp" />
 
         <TextView
             android:id="@+id/viewDireccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dirección" />
+            android:text="@string/hint_direccion"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/txtDireccion"
@@ -52,13 +73,19 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPostalAddress"
-            android:textSize="18sp" />
+            android:textSize="16sp"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp" />
 
         <TextView
             android:id="@+id/viewDeuda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Deuda" />
+            android:text="@string/hint_deuda"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/txtDeuda"
@@ -66,14 +93,20 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
-            android:textSize="18sp" />
+            android:textSize="16sp"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp" />
 
         <Button
             android:id="@+id/btnGuarda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Guardar"
-            android:textSize="18sp" />
+            android:text="@string/btn_guarda"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
 </LinearLayout>

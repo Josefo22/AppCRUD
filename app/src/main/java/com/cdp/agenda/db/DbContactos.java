@@ -43,21 +43,22 @@ public class DbContactos extends DbHelper {
     }
 
     public ArrayList<Contactos> mostrarContactos() {
-        SQLiteDatabase db = this.getWritableDatabase();
         ArrayList<Contactos> listaContactos = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase(); // Cambiado a getReadableDatabase
         Cursor cursorContactos = null;
 
         try {
+            // No deberías tener problemas con la consulta, ya que no hay LIMIT
             cursorContactos = db.rawQuery("SELECT * FROM " + TABLE_CONTACTOS + " ORDER BY nombre ASC", null);
 
             if (cursorContactos.moveToFirst()) {
                 do {
                     Contactos contacto = new Contactos();
-                    contacto.setId(cursorContactos.getInt(0));
-                    contacto.setNombre(cursorContactos.getString(1));
-                    contacto.setTelefono(cursorContactos.getString(2));
-                    contacto.setDireccion(cursorContactos.getString(3));
-                    contacto.setDeuda(cursorContactos.getString(4));
+                    contacto.setId(cursorContactos.getInt(cursorContactos.getColumnIndex("id")));
+                    contacto.setNombre(cursorContactos.getString(cursorContactos.getColumnIndex("nombre")));
+                    contacto.setTelefono(cursorContactos.getString(cursorContactos.getColumnIndex("telefono")));
+                    contacto.setDireccion(cursorContactos.getString(cursorContactos.getColumnIndex("direccion")));
+                    contacto.setDeuda(cursorContactos.getString(cursorContactos.getColumnIndex("deuda")));
                     listaContactos.add(contacto);
                 } while (cursorContactos.moveToNext());
             }
@@ -72,6 +73,7 @@ public class DbContactos extends DbHelper {
 
         return listaContactos;
     }
+
     public boolean actualizarDeuda(int id, double nuevaDeuda) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();

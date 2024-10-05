@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <!-- Color principal de la aplicación, usado para la barra de acción y otros elementos -->
+    <color name="colorPrimary">#4A90E2</color> <!-- Color de fondo principal, azul brillante -->
+
+    <!-- Color secundario para elementos destacados, botones, etc. -->
+    <color name="colorAccent">#FF6F61</color> <!-- Color de acento, coral -->
+    
+    <color name="design_default_color_on_primary">#FFFFFF</color>
+    <color name="design_default_color_primary">#6200EE</color>
+
+    <!-- Color más oscuro para la barra de estado y la barra de navegación -->
+    <color name="colorPrimaryDark">#003C71</color> <!-- Color de fondo oscuro, azul marino -->
 </resources>
